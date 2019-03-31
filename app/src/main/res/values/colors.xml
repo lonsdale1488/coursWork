@@ -3,5 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorLine">#645358</color>
+    <color name="colorLine">#252323</color>
+    <color name="profilePFon">#D3CACE</color>
+    <color name="profileTop">#EBE2E6</color>
+    <color name="colorText">#35FF17</color>
+
 </resources>
