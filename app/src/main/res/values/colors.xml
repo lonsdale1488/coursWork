@@ -6,6 +6,8 @@
     <color name="colorLine">#252323</color>
     <color name="profilePFon">#D3CACE</color>
     <color name="profileTop">#EBE2E6</color>
-    <color name="colorText">#35FF17</color>
-
+    <color name="colorTextGreen">#3F9733</color>
+    <color name="colorTextBlack">#1C221A</color>
+    <color name="colorTextGrey">#B8ADAD</color>
+    <color name="colorcall">#38DA1C</color>
 </resources>

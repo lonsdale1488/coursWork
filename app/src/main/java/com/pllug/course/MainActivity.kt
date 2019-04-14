@@ -1,12 +1,9 @@
 package com.pllug.course
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
+import android.support.v4.app.DialogFragment
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log
-import kotlinx.android.synthetic.main.fragment_profile.*
 
 
 class MainActivity : AppCompatActivity()  {
@@ -15,21 +12,26 @@ class MainActivity : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         showProfile ()
+        showDialog()
     }
 
  private fun replaseFragment (fragment: Fragment)
  {
-     var meneger = supportFragmentManager.beginTransaction()
+     supportFragmentManager.beginTransaction()
      .replace(R.id.frame, fragment)
      .addToBackStack(null)
      .commit()
 
  }
 
-    private fun showProfile ()
+     fun showProfile ()
     {
         replaseFragment(ProfileFragment())
     }
 
-
+     fun showDialog()
+    {
+        val dialogFragment = IDialogFragment()
+        dialogFragment.show(supportFragmentManager, "tag")
+    }
 }

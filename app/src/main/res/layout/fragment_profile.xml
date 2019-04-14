@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp"
-        android:background="@color/profilePFon">
+        android:background="@color/profilePFon"
+        >
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="15dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+           >
     <LinearLayout
-
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="100dp"
             android:orientation="horizontal"
             android:padding="5dp"
-
-
     >
+
         <ImageView android:layout_width="match_parent"
-                   android:layout_height="50dp"
+                   android:layout_height="75dp"
                    android:id="@+id/avatar"
                    android:src="@drawable/ic_android_black_24dp"
-                   android:layout_weight="1"
+                   android:layout_weight="2.8"
                    android:layout_gravity="center"
-                   android:layout_marginRight="5dp"/>
+                   android:layout_marginRight="10dp"
+                   android:background="@color/colorTextBlack"
+        />
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -37,10 +39,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/name"
-                    android:text="Name"
+                    android:text="The big big"
                     android:layout_weight="1"
-                    android:textSize="18sp"
-
+                    android:textSize="16sp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold"
             />
             <TextView
                     android:layout_width="match_parent"
@@ -48,8 +51,8 @@
                     android:id="@+id/level"
                     android:text="Level"
                     android:layout_weight="1"
-                    android:textSize="12sp"
-                    android:textcolor = "@color/colorText"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTextGreen"
 
             />
             <TextView
@@ -58,106 +61,149 @@
                     android:id="@+id/rating"
                     android:text="Rating"
                     android:layout_weight="1"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTextGrey"
             />
+
 
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:orientation="vertical"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/border"
-            android:padding="20dp"
-    >
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-        >
-            <TextView
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:padding="20dp">
+            <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/City"
-                    android:text="City"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-            />
-            <TextView
+                    android:orientation="horizontal"
+                    android:baselineAligned="true"
+            >
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/City"
+                        android:text="City"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textOnProfile"
+                />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city"
+                        android:text="Lviv"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textOnProfile"
+                />
+            </LinearLayout>
+            <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/Lviv"
-                    android:text="Lviv"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-            />
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/Cantry"
+                        android:text="Cantry"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textOnProfile"
+
+                />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/cantry"
+                        android:text="Ukraine"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textOnProfile"
+
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/TelephonNumber"
+                        android:text="Number"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textOnProfile"
+
+                />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/telphon"
+                        android:text="@string/telephonNumber"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textOnProfile"
+
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/Iformation"
+                        android:text="Information"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textOnProfile"
+                />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/information"
+                        android:text="@string/information"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textOnProfile"
+                />
+            </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-        >
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/Cantry"
-                    android:text="Cantry"
-                    android:layout_weight="1"
-            />
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/Ukraine"
-                    android:text="Ukraine"
-                    android:layout_weight="1"
-            />
-        </LinearLayout>
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-        >
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/TelephonNumber"
-                    android:text="Number"
-                    android:layout_weight="1"
-            />
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/telphon"
-                    android:text="+380938689210"
-                    android:layout_weight="1"
-            />
-        </LinearLayout>
-    </LinearLayout>
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_marginTop="30dp"
-                android:layout_marningBottom="50"
-                android:background="@drawable/border2"
+                android:padding="20dp"
+
         >
             <ImageView android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
+                       android:layout_height="50dp"
                        android:id="@+id/callt"
                        android:layout_gravity="center"
                        android:layout_weight="1"
-                       android:src="@drawable/ic_call_black_24dp"/>
+                       android:src="@drawable/ic_call_black_24dp"
+                       android:background="@drawable/call"
+                       android:layout_marginRight="20dp"
+                     />
 
             <ImageView android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
+                       android:layout_height="50dp"
                        android:id="@+id/sendmasseng"
                        android:layout_weight="1"
                        android:layout_gravity="center"
-                       android:src="@drawable/ic_chat_black_24dp"/>
+                       android:src="@drawable/ic_chat_black_24dp"
+                       android:background="@drawable/sent"
+                       />
         </LinearLayout>
-
     </LinearLayout>
 </LinearLayout>
